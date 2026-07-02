@@ -15,8 +15,8 @@ export default function Hero() {
           <div className="inline-block px-4 py-1.5 rounded-full border border-indigo-200 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-300 text-sm font-medium mb-2">
             Available for Opportunities
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Devesh Kumar T S
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight whitespace-nowrap">
+            Devesh Kumar TS
           </h1>
           <h2 className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium leading-snug max-w-2xl">
             Cybersecurity Enthusiast | CIT'28 | B.E CSE (Cyber Security) | AI Security Learner | Web Developer | CTF Enthusiast
