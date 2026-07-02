@@ -26,10 +26,13 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-wrap gap-4 pt-4 justify-center md:justify-start">
-            <a href="#projects" className="px-8 py-3 rounded-lg font-medium bg-indigo-600 text-white hover:bg-indigo-700 transition-colors shadow-sm hover:shadow">
+            <a href="#projects" className="px-6 py-3 rounded-lg font-medium bg-indigo-600 text-white hover:bg-indigo-700 transition-colors shadow-sm hover:shadow">
               View Projects
             </a>
-            <a href="#contact" className="px-8 py-3 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+            <a href="/resume.pdf" target="_blank" rel="noreferrer" className="px-6 py-3 rounded-lg font-medium border border-indigo-200 dark:border-indigo-800 text-indigo-700 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/20 hover:bg-indigo-100 dark:hover:bg-indigo-900/40 transition-colors">
+              View Resume
+            </a>
+            <a href="#contact" className="px-6 py-3 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
               Contact Me
             </a>
           </div>

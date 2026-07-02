@@ -24,6 +24,10 @@ export default function Certifications() {
     {
       name: "Introduction to Cybersecurity",
       issuer: "Cisco"
+    },
+    {
+      name: "Claude Code in Action",
+      issuer: "Anthropic"
     }
   ];
 

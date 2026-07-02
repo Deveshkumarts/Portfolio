@@ -14,11 +14,19 @@ export default function Experience() {
       icon: GraduationCap,
     },
     {
-      title: "Certified Ethical Hacker Workshop",
-      institution: "Self-Paced Training",
-      date: "2024",
+      title: "Cyber Security Internship",
+      institution: "Eoloid Solutions LLP",
+      date: "May 2026 - June 2026",
+      location: "Chennai, India",
+      description: "Successfully completed an intensive internship focused on practical Cyber Security applications.",
+      icon: Award,
+    },
+    {
+      title: "Ethical Hacking Virtual Internship",
+      institution: "EduSkills Academy",
+      date: "2025",
       location: "Online",
-      description: "Completed intensive training on modern penetration testing methodologies.",
+      description: "Successfully completed a 10-week virtual internship focusing on ethical hacking.",
       icon: Award,
     },
     {

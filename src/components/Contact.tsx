@@ -42,23 +42,23 @@ export default function Contact() {
             </p>
             
             <div className="flex flex-col gap-4">
-              <a href="mailto:contact@example.com" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md">
-                <div className="p-3 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 rounded-lg group-hover:scale-110 transition-transform">
+              <a href="mailto:deveshk17122006@gmail.com" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md overflow-hidden">
+                <div className="p-3 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 rounded-lg group-hover:scale-110 transition-transform shrink-0">
                   <Mail size={24} />
                 </div>
-                <span className="font-medium">contact@example.com</span>
+                <span className="font-medium truncate">deveshk17122006@gmail.com</span>
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md">
-                <div className="p-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg group-hover:scale-110 transition-transform">
+              <a href="https://github.com/Deveshkumarts" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md overflow-hidden">
+                <div className="p-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg group-hover:scale-110 transition-transform shrink-0">
                   <FaGithub size={24} />
                 </div>
-                <span className="font-medium">github.com/Devesh</span>
+                <span className="font-medium truncate">github.com/Deveshkumarts</span>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-[#0a66c2] transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md">
-                <div className="p-3 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg group-hover:scale-110 transition-transform">
+              <a href="https://www.linkedin.com/in/devesh-kumar-t-s-23b419329/" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-[#0a66c2] transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md overflow-hidden">
+                <div className="p-3 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg group-hover:scale-110 transition-transform shrink-0">
                   <FaLinkedin size={24} />
                 </div>
-                <span className="font-medium">linkedin.com/in/Devesh</span>
+                <span className="font-medium truncate">linkedin.com/in/devesh-kumar</span>
               </a>
             </div>
           </motion.div>
