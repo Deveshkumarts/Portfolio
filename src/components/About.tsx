@@ -6,7 +6,7 @@ import { User } from "lucide-react";
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 scroll-m-20">
-      <div className="max-w-5xl mx-auto bg-white dark:bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800 p-8 md:p-12 rounded-2xl relative overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-white/40 dark:border-white/10 p-8 md:p-12 rounded-2xl relative overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
         
         <motion.div
           initial={{ opacity: 0, y: 30 }}

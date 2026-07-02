@@ -9,7 +9,8 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col overflow-hidden">
+    <main className="flex min-h-screen flex-col overflow-hidden relative selection:bg-indigo-500/30">
+      <div className="fixed inset-0 z-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-100/40 via-slate-50 to-slate-50 dark:from-indigo-900/20 dark:via-slate-900 dark:to-slate-900 pointer-events-none" />
       <Hero />
       <div className="relative z-10 w-full pt-10">
         <About />

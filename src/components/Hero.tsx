@@ -15,7 +15,7 @@ export default function Hero() {
           <div className="inline-block px-4 py-1.5 rounded-full border border-indigo-200 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-900/30 dark:text-indigo-300 text-sm font-medium mb-2">
             Available for Opportunities
           </div>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight whitespace-nowrap">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight whitespace-nowrap bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-indigo-700 to-slate-900 dark:from-white dark:via-indigo-300 dark:to-white">
             Devesh Kumar TS
           </h1>
           <h2 className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium leading-snug max-w-2xl mt-4">
