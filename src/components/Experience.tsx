@@ -1,25 +1,31 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GraduationCap, Trophy, Award } from "lucide-react";
+import { GraduationCap, Trophy, Award, MapPin } from "lucide-react";
 
 export default function Experience() {
   const experiences = [
     {
-      title: "Undergraduate in Cyber Security",
-      date: "2023 - Present",
-      description: "Focusing on ethical hacking, network security, and secure software development.",
+      title: "B.E. Computer Science and Engineering (Cyber Security)",
+      institution: "Chennai Institute of Technology, Chennai",
+      date: "2024 - 2028",
+      location: "Chennai, India",
+      description: "Cumulative Grade Point Average (CGPA) - 7.5 / 10",
       icon: GraduationCap,
     },
     {
       title: "Certified Ethical Hacker Workshop",
+      institution: "Self-Paced Training",
       date: "2024",
+      location: "Online",
       description: "Completed intensive training on modern penetration testing methodologies.",
       icon: Award,
     },
     {
       title: "Capture The Flag (CTF) Participant",
+      institution: "National Level Events",
       date: "2024",
+      location: "Various",
       description: "Actively participated in national level CTF events, solving web and cryptography challenges.",
       icon: Trophy,
     }
@@ -30,7 +36,7 @@ export default function Experience() {
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            Experience
+            Education & Experience
           </h2>
           <div className="h-px bg-slate-200 dark:bg-slate-800 flex-grow" />
         </div>
@@ -50,12 +56,21 @@ export default function Experience() {
               </div>
               
               <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl hover:shadow-sm transition-shadow">
-                <span className="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-medium text-slate-600 dark:text-slate-400 mb-4">
-                  {exp.date}
-                </span>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 mb-2">
-                  {exp.title}
-                </h3>
+                <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
+                  <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">
+                    {exp.title}
+                  </h3>
+                  <span className="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-medium text-slate-600 dark:text-slate-400 mt-2 md:mt-0 w-fit">
+                    {exp.date}
+                  </span>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row sm:items-center text-sm font-medium text-indigo-600 dark:text-indigo-400 mb-4 gap-2 sm:gap-4">
+                  <span>{exp.institution}</span>
+                  <span className="hidden sm:inline text-slate-300 dark:text-slate-600">•</span>
+                  <span className="flex items-center gap-1"><MapPin size={14} /> {exp.location}</span>
+                </div>
+
                 <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                   {exp.description}
                 </p>

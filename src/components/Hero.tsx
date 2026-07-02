@@ -16,10 +16,10 @@ export default function Hero() {
             Available for Opportunities
           </div>
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Devesh Kumar
+            Devesh Kumar T S
           </h1>
-          <h2 className="text-xl md:text-3xl text-slate-600 dark:text-slate-400 font-medium">
-            Cybersecurity Enthusiast <br className="md:hidden" /> <span className="hidden md:inline">|</span> Ethical Hacker <span className="hidden md:inline">|</span> Developer
+          <h2 className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium leading-snug max-w-2xl">
+            Cybersecurity Enthusiast | CIT'28 | B.E CSE (Cyber Security) | AI Security Learner | Web Developer | CTF Enthusiast
           </h2>
           <p className="text-lg md:text-xl text-slate-500 dark:text-slate-400 max-w-lg pt-2">
             Securing the digital world, one system at a time. I specialize in vulnerability assessment, full-stack development, and building resilient applications.

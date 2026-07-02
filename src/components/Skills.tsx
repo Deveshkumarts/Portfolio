@@ -2,26 +2,39 @@
 
 import { motion } from "framer-motion";
 import { 
-  ShieldAlert, 
-  Terminal, 
   Code2, 
   Database, 
   Server, 
-  Network, 
-  Fingerprint, 
-  ScanSearch
+  ShieldAlert, 
+  Workflow
 } from "lucide-react";
 
-const skills = [
-  { name: "Cybersecurity", icon: ShieldAlert },
-  { name: "Ethical Hacking", icon: Fingerprint },
-  { name: "Python", icon: Code2 },
-  { name: "JavaScript", icon: Code2 },
-  { name: "MERN Stack", icon: Database },
-  { name: "Network Security", icon: Network },
-  { name: "Linux", icon: Terminal },
-  { name: "Vulnerability Assessment", icon: ScanSearch },
-  { name: "Penetration Testing", icon: Server },
+const skillCategories = [
+  { 
+    name: "Programming Languages", 
+    icon: Code2,
+    skills: ["Python", "C++", "JavaScript", "HTML", "CSS"]
+  },
+  { 
+    name: "Databases", 
+    icon: Database,
+    skills: ["MySQL", "MongoDB"]
+  },
+  { 
+    name: "CS Fundamentals", 
+    icon: Server,
+    skills: ["Data Structures & Algorithms", "OOP", "Computer Networks", "Operating Systems"]
+  },
+  { 
+    name: "Cybersecurity Tools", 
+    icon: ShieldAlert,
+    skills: ["Linux", "Burp Suite", "Nmap", "Whois"]
+  },
+  { 
+    name: "Automation & Workflow", 
+    icon: Workflow,
+    skills: ["N8N", "Process Automation", "API Integration"]
+  }
 ];
 
 export default function Skills() {
@@ -35,22 +48,32 @@ export default function Skills() {
           <div className="h-px bg-slate-200 dark:bg-slate-800 flex-grow" />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {skills.map((skill, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillCategories.map((category, i) => (
             <motion.div
-              key={skill.name}
+              key={category.name}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.05 }}
-              className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-xl flex flex-row items-center gap-4 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-sm transition-all duration-300"
+              transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 rounded-2xl flex flex-col hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-sm transition-all duration-300"
             >
-              <div className="p-2.5 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 rounded-lg">
-                <skill.icon size={20} />
+              <div className="flex items-center gap-4 mb-6">
+                <div className="p-3 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 rounded-xl">
+                  <category.icon size={24} />
+                </div>
+                <h3 className="font-bold text-lg text-slate-800 dark:text-slate-200">
+                  {category.name}
+                </h3>
               </div>
-              <h3 className="font-medium text-sm md:text-base text-slate-700 dark:text-slate-300">
-                {skill.name}
-              </h3>
+              <ul className="space-y-3">
+                {category.skills.map((skill, index) => (
+                  <li key={index} className="flex items-center text-slate-600 dark:text-slate-400 text-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 mr-3"></span>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>

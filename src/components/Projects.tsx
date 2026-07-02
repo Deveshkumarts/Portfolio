@@ -6,25 +6,25 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    title: "PhishGuard",
-    description: "Real-Time Phishing URL Detection System using Machine Learning and Heuristics.",
-    tech: ["Python", "Flask", "Scikit-Learn", "REST API"],
-    github: "#",
-    live: "#",
+    title: "CyberWSQK Security & Threat Detection CLI",
+    description: "Terminal-based cybersecurity monitoring platform. Detects suspicious activities, analyzes logs, and performs threat intelligence checks.",
+    tech: ["Python", "Linux", "Cybersecurity", "CLI"],
+    github: "https://github.com/Deveshkumarts/CyberWSQK-Security-Monitoring-Threat-Detection-CLI",
+    live: "https://github.com/Deveshkumarts/CyberWSQK-Security-Monitoring-Threat-Detection-CLI",
   },
   {
-    title: "Website Security Analysis Tool",
-    description: "A Python-based crawler and vulnerability finder that scans websites for common security flaws like XSS and SQLi.",
-    tech: ["Python", "BeautifulSoup", "Requests", "Regex"],
-    github: "#",
-    live: "#",
+    title: "Clinic Queue Manager",
+    description: "Real-time digital queue management system for clinics. Features live updates on current tokens and estimated waiting times for patients.",
+    tech: ["JavaScript", "Socket.IO", "Supabase", "React"],
+    github: "https://github.com/Deveshkumarts/Clinic-Queue-Manager",
+    live: "https://clinic-queue-manager-theta.vercel.app/",
   },
   {
-    title: "AI Threat Intelligence Dashboard",
-    description: "Dashboard collecting real-time threat inputs and mapping them out using LLM-based categorization.",
-    tech: ["Next.js", "Tailwind CSS", "OpenAI API", "Node.js"],
-    github: "#",
-    live: "#",
+    title: "Cryptography Algorithms Implementation",
+    description: "Python GUI application demonstrating core cryptography algorithms like AES, SHA (SHA-256/SHA-512), and RSA encryption/decryption.",
+    tech: ["Python", "Tkinter", "Cryptography", "Security"],
+    github: "https://github.com/Deveshkumarts/-Cryptography-Algorithms-Implementation",
+    live: "https://github.com/Deveshkumarts/-Cryptography-Algorithms-Implementation",
   }
 ];
 
@@ -52,8 +52,8 @@ export default function Projects() {
               <div className="flex justify-between items-center mb-6 text-indigo-600 dark:text-indigo-400">
                 <Folder size={28} />
                 <div className="flex gap-4 text-slate-400">
-                  <a href={project.github} className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors"><FaGithub size={20} /></a>
-                  <a href={project.live} className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors"><ExternalLink size={20} /></a>
+                  <a href={project.github} target="_blank" rel="noreferrer" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors"><FaGithub size={20} /></a>
+                  <a href={project.live} target="_blank" rel="noreferrer" className="hover:text-slate-900 dark:hover:text-slate-100 transition-colors"><ExternalLink size={20} /></a>
                 </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-slate-900 dark:text-slate-100">
