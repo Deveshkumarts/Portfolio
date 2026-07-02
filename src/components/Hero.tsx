@@ -44,7 +44,7 @@ export default function Hero() {
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-2 bg-gradient-to-tr from-indigo-100 to-slate-100 dark:from-slate-800 dark:to-slate-900 shadow-xl mx-auto md:ml-auto md:mr-0">
             <div className="w-full h-full rounded-full overflow-hidden bg-slate-200 dark:bg-slate-800 relative">
               <img 
-                src="https://avatars.githubusercontent.com/u/182058681?v=4" 
+                src="/profile.png" 
                 alt="Devesh Kumar TS" 
                 className="w-full h-full object-cover" 
               />
