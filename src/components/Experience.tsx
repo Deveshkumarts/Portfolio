@@ -24,7 +24,7 @@ export default function Experience() {
     {
       title: "Capture The Flag (CTF) Participant",
       institution: "National Level Events",
-      date: "2024",
+      date: "2025",
       location: "Various",
       description: "Actively participated in national level CTF events, solving web and cryptography challenges.",
       icon: Trophy,

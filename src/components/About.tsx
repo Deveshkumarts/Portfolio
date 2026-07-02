@@ -23,10 +23,10 @@ export default function About() {
           
           <div className="space-y-6 text-slate-600 dark:text-slate-400 leading-relaxed text-base md:text-lg">
             <p>
-              I am an undergraduate in Cyber Security and a passionate developer with an analytical mindset. I constantly explore the depths of web security, network protocols, and secure software development. 
+              I am an undergraduate in Cyber Security and a passionate Full-Stack Developer with an analytical mindset. I specialize in bridging the gap between building dynamic, user-centric web applications and ensuring they are fortified against modern cyber threats.
             </p>
             <p>
-              My mission is to secure the digital world by identifying vulnerabilities before they can be exploited. I thrive in the intersection between breaking systems to understand them and building them to be resilient against modern threats.
+              My dual interest allows me to not only architect and develop scalable full-stack solutions but also to proactively identify vulnerabilities through ethical hacking and security assessments. I thrive in the intersection between breaking systems to understand their flaws and building them to be inherently resilient.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-8 border-t border-slate-200 dark:border-slate-800">
               <div className="flex items-center gap-3">

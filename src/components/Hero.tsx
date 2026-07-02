@@ -18,8 +18,8 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight whitespace-nowrap">
             Devesh Kumar TS
           </h1>
-          <h2 className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium leading-snug max-w-2xl">
-            Cybersecurity Enthusiast | CIT'28 | B.E CSE (Cyber Security) | AI Security Learner | Web Developer | CTF Enthusiast
+          <h2 className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 font-medium leading-snug max-w-2xl mt-4">
+            Cybersecurity Enthusiast | B.E CSE (Cyber Security) | AI Security Learner | Full-Stack Developer | CTF Enthusiast
           </h2>
           <p className="text-lg md:text-xl text-slate-500 dark:text-slate-400 max-w-lg pt-2">
             Securing the digital world, one system at a time. I specialize in vulnerability assessment, full-stack development, and building resilient applications.
