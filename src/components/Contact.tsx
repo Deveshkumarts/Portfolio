@@ -16,100 +16,110 @@ export default function Contact() {
     setTimeout(() => {
       setIsSubmitting(false);
       setFormState({ name: "", email: "", message: "" });
-      alert("Message intercepted and delivered securely.");
+      alert("Your message has been sent successfully.");
     }, 1500);
   };
 
   return (
-    <section id="contact" className="py-20 px-4 relative z-10 scroll-m-20">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
-        <motion.div 
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="md:w-1/2"
-        >
-          <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-widest uppercase">
-              <span className="text-purple-400">/</span> Secure_Comms
-            </h2>
-          </div>
-          <p className="text-slate-400 font-[family-name:var(--font-fira-code)] mb-8">
-            Connection established. Encrypted channel open. Need to discuss a project, security audit, or just want to say hi? Drop a message below.
-          </p>
-          
-          <div className="flex flex-col gap-6">
-            <a href="mailto:contact@example.com" className="flex items-center gap-4 text-slate-300 hover:text-cyan-400 transition-colors group p-4 border border-slate-800 rounded-lg bg-slate-900/50 hover:border-cyan-500/30">
-              <Mail className="group-hover:animate-pulse text-cyan-500" />
-              <span className="font-[family-name:var(--font-fira-code)]">contact@example.com</span>
-            </a>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-purple-400 transition-colors group p-4 border border-slate-800 rounded-lg bg-slate-900/50 hover:border-purple-500/30">
-              <FaGithub className="group-hover:animate-pulse text-purple-500" size={24} />
-              <span className="font-[family-name:var(--font-fira-code)]">github.com/Devesh</span>
-            </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-300 hover:text-neon-green transition-colors group p-4 border border-slate-800 rounded-lg bg-slate-900/50 hover:border-neon-green/30">
-              <FaLinkedin className="group-hover:animate-pulse text-[var(--neon-green)]" size={24} />
-              <span className="font-[family-name:var(--font-fira-code)]">linkedin.com/in/Devesh</span>
-            </a>
-          </div>
-        </motion.div>
+    <section id="contact" className="py-20 px-4 scroll-m-20">
+      <div className="max-w-5xl mx-auto">
+        <div className="flex items-center gap-4 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            Contact
+          </h2>
+          <div className="h-px bg-slate-200 dark:bg-slate-800 flex-grow" />
+        </div>
+        
+        <div className="flex flex-col md:flex-row gap-12">
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="md:w-1/2"
+          >
+            <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed text-lg">
+              I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions. Feel free to reach out through any of the platforms below.
+            </p>
+            
+            <div className="flex flex-col gap-4">
+              <a href="mailto:contact@example.com" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md">
+                <div className="p-3 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 rounded-lg group-hover:scale-110 transition-transform">
+                  <Mail size={24} />
+                </div>
+                <span className="font-medium">contact@example.com</span>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md">
+                <div className="p-3 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg group-hover:scale-110 transition-transform">
+                  <FaGithub size={24} />
+                </div>
+                <span className="font-medium">github.com/Devesh</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-4 text-slate-600 dark:text-slate-400 hover:text-[#0a66c2] transition-colors group p-4 border border-slate-200 dark:border-slate-800 rounded-xl bg-white dark:bg-slate-900 shadow-sm hover:shadow-md">
+                <div className="p-3 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-lg group-hover:scale-110 transition-transform">
+                  <FaLinkedin size={24} />
+                </div>
+                <span className="font-medium">linkedin.com/in/Devesh</span>
+              </a>
+            </div>
+          </motion.div>
 
-        <motion.div 
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          className="md:w-1/2 glass-panel p-8 rounded-xl glow-border"
-        >
-          <form onSubmit={handleSubmit} className="flex flex-col gap-6">
-            <div className="flex flex-col gap-2">
-              <label htmlFor="name" className="text-cyan-400 font-[family-name:var(--font-fira-code)] text-sm">&gt; Target_Name</label>
-              <input 
-                type="text" 
-                id="name"
-                required
-                value={formState.name}
-                onChange={e => setFormState({...formState, name: e.target.value})}
-                className="bg-[#020617]/50 border border-slate-700 rounded p-3 text-white focus:outline-none focus:border-cyan-500 focus:shadow-[0_0_10px_rgba(0,255,255,0.2)] transition-all font-[family-name:var(--font-fira-code)]"
-                placeholder="John Doe"
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label htmlFor="email" className="text-cyan-400 font-[family-name:var(--font-fira-code)] text-sm">&gt; Return_Address</label>
-              <input 
-                type="email" 
-                id="email"
-                required
-                value={formState.email}
-                onChange={e => setFormState({...formState, email: e.target.value})}
-                className="bg-[#020617]/50 border border-slate-700 rounded p-3 text-white focus:outline-none focus:border-cyan-500 focus:shadow-[0_0_10px_rgba(0,255,255,0.2)] transition-all font-[family-name:var(--font-fira-code)]"
-                placeholder="john@example.com"
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label htmlFor="message" className="text-cyan-400 font-[family-name:var(--font-fira-code)] text-sm">&gt; Payload</label>
-              <textarea 
-                id="message"
-                required
-                rows={5}
-                value={formState.message}
-                onChange={e => setFormState({...formState, message: e.target.value})}
-                className="bg-[#020617]/50 border border-slate-700 rounded p-3 text-white focus:outline-none focus:border-cyan-500 focus:shadow-[0_0_10px_rgba(0,255,255,0.2)] transition-all font-[family-name:var(--font-fira-code)] resize-none"
-                placeholder="Enter encrypted message here..."
-              />
-            </div>
-            <button 
-              type="submit" 
-              disabled={isSubmitting}
-              className="cyber-button w-full py-4 rounded font-bold tracking-widest flex items-center justify-center gap-2 mt-4"
-            >
-              {isSubmitting ? (
-                <>Transmitting... <span className="animate-spin text-cyan-400">|</span></>
-              ) : (
-                <>Execute Payload <Send size={18} /></>
-              )}
-            </button>
-          </form>
-        </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="md:w-1/2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-8 rounded-2xl shadow-sm"
+          >
+            <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="name" className="text-slate-700 dark:text-slate-300 font-medium text-sm">Name</label>
+                <input 
+                  type="text" 
+                  id="name"
+                  required
+                  value={formState.name}
+                  onChange={e => setFormState({...formState, name: e.target.value})}
+                  className="bg-slate-50 dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg p-3.5 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="email" className="text-slate-700 dark:text-slate-300 font-medium text-sm">Email Address</label>
+                <input 
+                  type="email" 
+                  id="email"
+                  required
+                  value={formState.email}
+                  onChange={e => setFormState({...formState, email: e.target.value})}
+                  className="bg-slate-50 dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg p-3.5 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
+                  placeholder="john@example.com"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label htmlFor="message" className="text-slate-700 dark:text-slate-300 font-medium text-sm">Message</label>
+                <textarea 
+                  id="message"
+                  required
+                  rows={5}
+                  value={formState.message}
+                  onChange={e => setFormState({...formState, message: e.target.value})}
+                  className="bg-slate-50 dark:bg-slate-800/50 border border-slate-300 dark:border-slate-700 rounded-lg p-3.5 text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all resize-none"
+                  placeholder="How can I help you?"
+                />
+              </div>
+              <button 
+                type="submit" 
+                disabled={isSubmitting}
+                className="w-full py-4 rounded-lg font-medium bg-indigo-600 text-white hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2 mt-2"
+              >
+                {isSubmitting ? (
+                  <>Sending... <span className="animate-spin ml-2">⏳</span></>
+                ) : (
+                  <>Send Message <Send size={18} /></>
+                )}
+              </button>
+            </form>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

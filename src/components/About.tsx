@@ -1,51 +1,49 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Terminal } from "lucide-react";
+import { User } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-4 relative z-10 scroll-m-20">
-      <div className="max-w-5xl mx-auto glass-panel p-8 md:p-12 rounded-xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-4 opacity-50">
-          <Terminal size={100} className="text-cyan-500/10 absolute -top-4 -right-4 -rotate-12" />
-        </div>
+    <section id="about" className="py-20 px-4 scroll-m-20">
+      <div className="max-w-5xl mx-auto bg-white dark:bg-slate-900 shadow-sm border border-slate-200 dark:border-slate-800 p-8 md:p-12 rounded-2xl relative overflow-hidden">
         
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-center gap-4 mb-8">
-            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-widest uppercase">
-              <span className="text-cyan-400">/</span> About_Me
+            <User className="text-indigo-600 dark:text-indigo-400" size={32} />
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+              About Me
             </h2>
-            <div className="h-px bg-cyan-500/30 flex-grow" />
           </div>
           
-          <div className="space-y-6 text-slate-300 font-[family-name:var(--font-fira-code)] leading-relaxed text-sm md:text-base">
+          <div className="space-y-6 text-slate-600 dark:text-slate-400 leading-relaxed text-base md:text-lg">
             <p>
-              <span className="text-purple-400">#</span> Initialize profile sequence...
-            </p>
-            <p>
-              I am an undergraduate in Cyber Security and a passionate developer with a hacker mindset. I constantly explore the depths of web security, network protocols, and ethical hacking. 
+              I am an undergraduate in Cyber Security and a passionate developer with an analytical mindset. I constantly explore the depths of web security, network protocols, and secure software development. 
             </p>
             <p>
               My mission is to secure the digital world by identifying vulnerabilities before they can be exploited. I thrive in the intersection between breaking systems to understand them and building them to be resilient against modern threats.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-6 border-t border-cyan-500/20">
-              <div className="flex items-center gap-2">
-                <span className="text-[var(--neon-green)]">✔</span> Vulnerability Assessment
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 pt-8 border-t border-slate-200 dark:border-slate-800">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-indigo-500"></div>
+                Vulnerability Assessment
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[var(--neon-green)]">✔</span> Full-Stack Development
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-indigo-500"></div>
+                Full-Stack Development
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[var(--neon-green)]">✔</span> Exploit Research
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-indigo-500"></div>
+                Exploit Research
               </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[var(--neon-green)]">✔</span> Network Diagnostics
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-indigo-500"></div>
+                Network Diagnostics
               </div>
             </div>
           </div>

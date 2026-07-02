@@ -13,40 +13,42 @@ import {
 } from "lucide-react";
 
 const skills = [
-  { name: "Cybersecurity", icon: ShieldAlert, color: "text-cyan-400" },
-  { name: "Ethical Hacking", icon: Fingerprint, color: "text-purple-400" },
-  { name: "Python", icon: Code2, color: "text-yellow-400" },
-  { name: "JavaScript", icon: Code2, color: "text-yellow-300" },
-  { name: "MERN Stack", icon: Database, color: "text-green-400" },
-  { name: "Network Security", icon: Network, color: "text-blue-400" },
-  { name: "Linux", icon: Terminal, color: "text-orange-400" },
-  { name: "Vulnerability Assessment", icon: ScanSearch, color: "text-red-400" },
-  { name: "Penetration Testing", icon: Server, color: "text-indigo-400" },
+  { name: "Cybersecurity", icon: ShieldAlert },
+  { name: "Ethical Hacking", icon: Fingerprint },
+  { name: "Python", icon: Code2 },
+  { name: "JavaScript", icon: Code2 },
+  { name: "MERN Stack", icon: Database },
+  { name: "Network Security", icon: Network },
+  { name: "Linux", icon: Terminal },
+  { name: "Vulnerability Assessment", icon: ScanSearch },
+  { name: "Penetration Testing", icon: Server },
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-4 relative z-10 scroll-m-20">
+    <section id="skills" className="py-20 px-4 scroll-m-20">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold text-white tracking-widest uppercase">
-            <span className="text-purple-400">/</span> Skills_Arsenal
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            Skills
           </h2>
-          <div className="h-px bg-purple-500/30 flex-grow" />
+          <div className="h-px bg-slate-200 dark:bg-slate-800 flex-grow" />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {skills.map((skill, i) => (
             <motion.div
               key={skill.name}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="glass-panel p-6 rounded-lg flex flex-col items-center justify-center gap-4 hover:-translate-y-2 transition-transform duration-300 group glow-border"
+              transition={{ duration: 0.4, delay: i * 0.05 }}
+              className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-xl flex flex-row items-center gap-4 hover:border-indigo-300 dark:hover:border-indigo-700 hover:shadow-sm transition-all duration-300"
             >
-              <skill.icon size={40} className={`${skill.color} group-hover:animate-pulse`} />
-              <h3 className="font-[family-name:var(--font-fira-code)] text-sm md:text-base text-center">
+              <div className="p-2.5 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 rounded-lg">
+                <skill.icon size={20} />
+              </div>
+              <h3 className="font-medium text-sm md:text-base text-slate-700 dark:text-slate-300">
                 {skill.name}
               </h3>
             </motion.div>
