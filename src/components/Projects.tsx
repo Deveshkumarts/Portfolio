@@ -25,6 +25,27 @@ const projects = [
     tech: ["Python", "Tkinter", "Cryptography", "Security"],
     github: "https://github.com/Deveshkumarts/-Cryptography-Algorithms-Implementation",
     live: "https://github.com/Deveshkumarts/-Cryptography-Algorithms-Implementation",
+  },
+  {
+    title: "TKS Balaji Maligai (Online Grocery)",
+    description: "Modern full-stack grocery ecommerce web app with secure Google OAuth login, dynamic product/category management, admin dashboard, and order tracking.",
+    tech: ["Next.js", "React", "Node.js", "MongoDB"],
+    github: "https://github.com/Deveshkumarts/Online-Grocery-App",
+    live: "https://online-grocery-app-six.vercel.app",
+  },
+  {
+    title: "FlowSync IC (Analog Layout Workflow)",
+    description: "MERN stack web application that automates analog layout workflow management. Helps assign tasks, track progress, and manage approvals with smart delay prediction.",
+    tech: ["MERN", "React", "Node.js", "Automation"],
+    github: "https://github.com/Deveshkumarts/Analog-Layout-Workflow-Automation-System",
+    live: "https://flowsyncicofficial.netlify.app",
+  },
+  {
+    title: "Password Cracking & Hashing Algorithms",
+    description: "Beginner-friendly password cracking tool written in Python. Demonstrates how brute-force attacks and wordlist/hash-based password cracking work.",
+    tech: ["Python", "Cybersecurity", "Hashing", "Security"],
+    github: "https://github.com/Deveshkumarts/Password-Cracking-and-Hashing-Algorithms",
+    live: "https://github.com/Deveshkumarts/Password-Cracking-and-Hashing-Algorithms",
   }
 ];
 
