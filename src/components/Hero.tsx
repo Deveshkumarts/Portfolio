@@ -41,9 +41,13 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="md:w-1/2 flex justify-center"
         >
-          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-3xl p-2 bg-gradient-to-tr from-indigo-100 to-slate-100 dark:from-slate-800 dark:to-slate-900 shadow-xl overflow-hidden">
-            <div className="w-full h-full rounded-2xl overflow-hidden bg-slate-200 dark:bg-slate-800 relative">
-              <div className="absolute inset-0 bg-[url('https://api.dicebear.com/7.x/avataaars/svg?seed=Devesh')] bg-center bg-cover" />
+          <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full p-2 bg-gradient-to-tr from-indigo-100 to-slate-100 dark:from-slate-800 dark:to-slate-900 shadow-xl mx-auto md:ml-auto md:mr-0">
+            <div className="w-full h-full rounded-full overflow-hidden bg-slate-200 dark:bg-slate-800 relative">
+              <img 
+                src="https://avatars.githubusercontent.com/u/182058681?v=4" 
+                alt="Devesh Kumar TS" 
+                className="w-full h-full object-cover" 
+              />
             </div>
           </div>
         </motion.div>
